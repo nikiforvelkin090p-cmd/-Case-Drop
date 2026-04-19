@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <!-- 🔹 Обязательно для ВК: запрет зума и адаптивность -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0f0f23" />
     <title>Case Drop</title>
-    <!-- ❌ УДАЛИЛ: <script src="...vk-bridge..."> — он конфликтует с npm-версией -->
-    <script type="module" crossorigin src="/-Case-Drop/assets/index-heeY_e5u.js"></script>
+    <!-- 🔹 VK Bridge (для инициализации в ВК) -->
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script type="module" crossorigin src="/-Case-Drop/assets/index-Bq70yHpd.js"></script>
     <link rel="stylesheet" crossorigin href="/-Case-Drop/assets/index-ChaiY8-Z.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- 🔹 Vite сам подставит сюда скрипты при сборке -->
   </body>
 </html>
